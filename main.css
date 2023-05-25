@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    height: 300px;
+    background-color: red;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+div.flexContainer>* {
+    background-color: aqua;
+    width: 100%;
+    height: 200px;
+}
+
+
+/*--Pantalla mediana 768px--*/
+@media screen and (min-width: 768px) {
+    .container {
+        width: 90%;
+}
+    header {
+        background-color: orange;
+    }
+    div.flexContainer>* {
+        width: calc(50% - 10px);
+    }
+}
+
+/*--Pantalla mediana--*/
+
+/*--Pantalla grande --*/
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 80%;
+}
+    header {
+        background-color: black;
+    }
+    div.flexContainer>* {
+        width: calc(50% - 10px);
+    }
+}
+
+/*--Pantalla grande--*/
